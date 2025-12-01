@@ -133,10 +133,11 @@ public class MemFileOutputStream extends OutputStream {
                 memoryOutputStream.close();
                 memoryOutputStream = null;
             }
-            size++;
+
         } else {
             fileOutputStream.write(byteData);
         } 
+        size++;
     }
 
 
